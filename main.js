@@ -31,40 +31,61 @@ myPersevereCodeObj["cumulativeScore"] = 50
 console.log(myPersevereCodeObj)
 
 // Now add your `currentScore` and your `cumulativeScore` and put it back in `cumulativeScore`.
-myPersevereCodeObj.cumulativeScore = myPersevereCodeObj.currentScore + myPersevereCodeObj.cumulativeScore 
+myPersevereCodeObj.cumulativeScore += myPersevereCodeObj.currentScore  
 console.log(myPersevereCodeObj.cumulativeScore)
 
 // Now add a property called `I am exactly this cool` (you'll need bracket notation!) and set it to `soooooo cool`.
-
+myPersevereCodeObj["I am exactly this cool"] = "soooooo cool"
+console.log(myPersevereCodeObj["I am exactly this cool"])
 
 // Part 2 - your own object.
 // Now make a new EMPTY object that represents yourself. You won't put any properties in the curly braces, but just like in part 1, add them in each step below using plain JavaScript statements.
-
+const myself = {}
 
 // Add a `firstName` property and set it to a string.
-
+myself.firstName = "Mary"
+console.log(myself.firstName)
 
 // Add a `lastName` property and set it to a string.
-
+myself.lastName = "Froust"
+console.log(myself.lastName)
 
 // Add a `fullName` property and set it to the name properties put together with a space string in the middle.
-
+myself.fullName = myself.firstName + " " + myself.lastName
+console.log(myself.fullName)
 
 // Add an `age` property and set it to a number.
-
+myself["age"] = 30
+console.log(myself["age"])
 
 // Add an address property and set it to an empty array.
-
+myself.address = []
 
 // Now push three strings into that array.
-
+myself.address.push(myself.age, myself.firstName, myself.lastName)
+console.log(myself.address)
 
 
 
 // Part 3 - setting key-value pairs in-line.
-// Now make a new object, but this time we'll pre-populate it, not set it in any lines below it. In other words, the properties should be set the same way I initially set the `myPersevereCodeObj` on line 1. It can be called whatever you want and can have whatever properties you want, as long as they include at least one string value, boolean value, number value, and array of something. The important thing here is: this should all be done within the curly brackets of the object, not below the place where the object is declared.
+// Now make a new object, but this time we'll pre-populate it, 
+// not set it in any lines below it. In other words, the properties should be set
+//  the same way I initially set the `myPersevereCodeObj` on line 1. It can be called 
+// whatever you want and can have whatever properties you want, as long as they include
+//  at least one string value, boolean value, number value, and array of something.
+//  The important thing here is: this should all be done within the curly brackets of the object,
+//  not below the place where the object is declared.
+const newObj = {
+  string: "cars , trucks, boats",
+  num: 22,
+  bool:"true",
+  Arr:["blue", "red", "green"],
+}
+console.log(newObj)
 
 
+// As a stretch goal, go back pre-populate the object with at least one property
+//  using a key name that CAN'T be a variable name. That would be anything with a space in it, or a dash, or starting with a number.
+newObj["puppy"] = "Fido"
+console.log(newObj["puppy"])
 
-
-// As a stretch goal, go back pre-populate the object with at least one property using a key name that CAN'T be a variable name. That would be anything with a space in it, or a dash, or starting with a number.
