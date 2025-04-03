@@ -89,3 +89,6 @@ console.log(newObj)
 newObj["illegal"] = "Criminal"
 console.log(newObj["illegal"])
 
+ newObj["7, is this the illegal way?"] = "Illegal"
+ console.log(newObj["7, is this the illegal way?"])
+
